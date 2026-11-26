@@ -1,12 +1,166 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen</title>
+    <title>NOVA 2027</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hola</h1>
+    <header>
+        <img src="img/logo.svg" alt="logo">
+        <div class="encabezado">
+            <p><strong>Activitats</strong></p>
+            <p><strong>Programa</strong></p>
+            <button>
+                <strong>Inscriu-t'hi</strong>
+                <img src="img/arrow-up.svg" alt="flecha-arriba">
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="main1">
+            <div class="badalona">
+                <div class="circulo-verde"></div>
+                <h5>BADALONA · EDICIÓ 2027</h5>
+            </div>
+            <h1>El futur es<br><span class="verde">avui.</span></h1>
+            <p>
+                Una jornada per descobrir la tecnologia,<br>
+                compartir idees i transformar la creativitat en<br>
+                projectes reals.
+            </p>
+            <button>
+                <strong>Reserva la teva plaça</strong>
+                <img src="img/arrow.svg" alt="flecha">
+            </button>
+            <div class="calendario-ubi">
+                <img src="img/calendar.svg" alt="calendario">
+                <p>15 maig 2027</p>
+                <img src="img/pin.svg" alt="pin">
+                <p>Badalona</p>
+            </div>
+            <img class="hero" src="img/hero.jpg" alt="hero">
+            <div class="dentro-hero">
+                <p>NOVA / 2027</p>
+            </div>
+            <div class="talleres">
+                <p>3 TALLERS</p>
+                <img src="img/star.svg" alt="star">
+                <p>1 JORNADA</p>
+                <img src="img/star.svg" alt="star">
+                <p>ENTRADA GRATUÏTA</p>
+            </div>
+        </div>
+        <div class="main2">
+            <p><strong>01 / EXPLORA</strong></p>
+            <h2><strong>Aprèn fent.</strong></h2>
+            <p>
+                Tres espais per experimentar amb la<br>
+                tecnologia i descobrir noves idees.
+            </p>
+            <div class="foto-web-descrip">
+                <img src="img/web.jpg" alt="web">
+                <p class="taller-flecha">
+                    TALLER / 01
+                    <img src="img/arrow-up.svg" alt="flecha-arriba">
+                </p>
+                <h3>Desenvolupament web</h3>
+                <p>Construeix experiències digitals amb HTML i<br>CSS.</p>
+            </div>
+            <div class="foto-desing-descrip">
+                <img src="img/design.jpg" alt="design">
+                <p class="taller-flecha">
+                    TALLER / 02
+                    <img src="img/arrow-up.svg" alt="flecha-arriba">
+                </p>
+                <h3>Disseny digital</h3>
+                <p>Experimenta amb formes, colors i interfícies.</p>
+            </div>
+            <div class="foto-robot-descrip">
+                <img src="img/robot.jpg" alt="robot">
+                <p class="taller-flecha">
+                    TALLER / 03
+                    <img src="img/arrow-up.svg" alt="flecha-arriba">
+                </p>
+                <h3>Robòtica creativa</h3>
+                <p>Descobreix com connectar el món físic i<br>digital.</p>
+            </div>
+            <div class="organitza't">
+                <p><strong>02 / ORGANITZA'T</strong></p>
+                <h2>Programa de la<br>jornada</h2>
+                <p>
+                    Una jornada plena de descobriments,<br>
+                    creativitat i tecnologia.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>HORA</th>
+                            <th>ACTIVITAT</th>
+                            <th>ESPAI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>09:00</strong></td>
+                            <td>Benvinguda</td>
+                            <td>Auditori</td>
+                        </tr>
+                        <tr>
+                            <td><strong>10:00</strong></td>
+                            <td>Tallers pràctics</td>
+                            <td>Laboratori</td>
+                        </tr>
+                        <tr>
+                            <td><strong>12:00</strong></td>
+                            <td>Mostra de projectes</td>
+                            <td>Sala NOVA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="participa">
+                <p><strong>03 / PARTICIPA</strong></p>
+                <h2>Ens veiem<br>a NOVA?</h2>
+                <p>
+                    Inscripció gratuïta. Places limitades. Vine<br>
+                    a imaginar el futur amb nosaltres.
+                </p>
+                <div class="15maig">
+                    <p><strong>15 MAIG 2027 · BADALONA</strong></p>
+                </div>
+                <form action="/contacte">
+                    <p><strong>Nom complet</strong></p>
+                    <label for="nom"></label>
+                    <input type="text" id="nom" name="nom" placeholder="El teu nom">
+                    <p><strong>Correu electrònic</strong></p>
+                    <label for="correu"></label>
+                    <input type="email" id="correu" name="correu" placeholder="nom@exemple.cat">
+                    <p><strong>Taller preferit</strong></p>
+                    <label for="taller"></label>
+                    <select name="taller" id="taller">
+                        <option value="">Selecciona un taller</option>
+                        <option value="web">Desenvolupament web</option>
+                        <option value="disseny">Disseny digital</option>
+                        <option value="robotica">Robòtica creativa</option>
+                    </select>
+                    <input type="checkbox" id="condicions" name="condicions">
+                    <label for="condicions">Accepto les condicions de participació.</label>
+                    <button type="submit">
+                        <strong>Inscriu-m'hi</strong>
+                        <img src="img/arrow.svg" alt="flecha">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="img/logo.svg" alt="logo">
+        <p>Festival de tecnologia i creativitat digital</p>
+        <p>© 2027 NOVA · Badalona</p>
+    </footer>
+
 </body>
 </html>
